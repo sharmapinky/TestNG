@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="44" started-at="2019-03-18T09:39:16Z" finished-at="2019-03-18T09:39:16Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="44" started-at="2019-03-18T09:39:16Z" finished-at="2019-03-18T09:39:16Z">
+      <class name="AnnotationsInTestNG.Annotations">
+        <test-method status="PASS" signature="beforesuite()[pri:0, instance:AnnotationsInTestNG.Annotations@3ecf72fd]" name="beforesuite" is-config="true" duration-ms="31" started-at="2019-03-18T15:09:16Z" finished-at="2019-03-18T15:09:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforesuite -->
+        <test-method status="PASS" signature="beforetest()[pri:0, instance:AnnotationsInTestNG.Annotations@3ecf72fd]" name="beforetest" is-config="true" duration-ms="13" started-at="2019-03-18T15:09:16Z" finished-at="2019-03-18T15:09:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforetest -->
+        <test-method status="PASS" signature="beforemethode()[pri:0, instance:AnnotationsInTestNG.Annotations@3ecf72fd]" name="beforemethode" is-config="true" duration-ms="0" started-at="2019-03-18T15:09:16Z" finished-at="2019-03-18T15:09:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforemethode -->
+        <test-method status="PASS" signature="beforeclass()[pri:0, instance:AnnotationsInTestNG.Annotations@3ecf72fd]" name="beforeclass" is-config="true" duration-ms="0" started-at="2019-03-18T15:09:16Z" finished-at="2019-03-18T15:09:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeclass -->
+        <test-method status="PASS" signature="test()[pri:0, instance:AnnotationsInTestNG.Annotations@3ecf72fd]" name="test" duration-ms="16" started-at="2019-03-18T15:09:16Z" finished-at="2019-03-18T15:09:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method status="PASS" signature="afterclass()[pri:0, instance:AnnotationsInTestNG.Annotations@3ecf72fd]" name="afterclass" is-config="true" duration-ms="0" started-at="2019-03-18T15:09:16Z" finished-at="2019-03-18T15:09:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterclass -->
+        <test-method status="PASS" signature="aftermethod()[pri:0, instance:AnnotationsInTestNG.Annotations@3ecf72fd]" name="aftermethod" is-config="true" duration-ms="0" started-at="2019-03-18T15:09:16Z" finished-at="2019-03-18T15:09:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftermethod -->
+        <test-method status="PASS" signature="aftertest()[pri:0, instance:AnnotationsInTestNG.Annotations@3ecf72fd]" name="aftertest" is-config="true" duration-ms="0" started-at="2019-03-18T15:09:16Z" finished-at="2019-03-18T15:09:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftertest -->
+        <test-method status="PASS" signature="aftersuite()[pri:0, instance:AnnotationsInTestNG.Annotations@3ecf72fd]" name="aftersuite" is-config="true" duration-ms="1" started-at="2019-03-18T15:09:17Z" finished-at="2019-03-18T15:09:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftersuite -->
+      </class> <!-- AnnotationsInTestNG.Annotations -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
