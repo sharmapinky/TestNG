@@ -1,49 +1,100 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="44" started-at="2019-03-18T09:39:16Z" finished-at="2019-03-18T09:39:16Z">
+  <suite name="Default suite" duration-ms="1178" started-at="2019-03-20T04:02:08Z" finished-at="2019-03-20T04:02:09Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="44" started-at="2019-03-18T09:39:16Z" finished-at="2019-03-18T09:39:16Z">
-      <class name="AnnotationsInTestNG.Annotations">
-        <test-method status="PASS" signature="beforesuite()[pri:0, instance:AnnotationsInTestNG.Annotations@3ecf72fd]" name="beforesuite" is-config="true" duration-ms="31" started-at="2019-03-18T15:09:16Z" finished-at="2019-03-18T15:09:16Z">
+    <test name="Default test" duration-ms="1178" started-at="2019-03-20T04:02:08Z" finished-at="2019-03-20T04:02:09Z">
+      <class name="FeaturesInTestNG.ExpectedException">
+        <test-method status="PASS" signature="handleException()[pri:0, instance:FeaturesInTestNG.ExpectedException@25618e91]" name="handleException" duration-ms="91" started-at="2019-03-20T09:32:08Z" finished-at="2019-03-20T09:32:08Z">
+          <exception class="java.lang.NumberFormatException">
+            <message>
+              <![CDATA[For input string: "100a"]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NumberFormatException: For input string: "100a"
+	at java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at FeaturesInTestNG.ExpectedException.handleException(ExpectedException.java:11)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NumberFormatException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforesuite -->
-        <test-method status="PASS" signature="beforetest()[pri:0, instance:AnnotationsInTestNG.Annotations@3ecf72fd]" name="beforetest" is-config="true" duration-ms="13" started-at="2019-03-18T15:09:16Z" finished-at="2019-03-18T15:09:16Z">
+        </test-method> <!-- handleException -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:FeaturesInTestNG.ExpectedException@25618e91]" name="setup" duration-ms="797" started-at="2019-03-20T09:32:08Z" finished-at="2019-03-20T09:32:09Z">
+          <exception class="java.lang.IllegalStateException">
+            <message>
+              <![CDATA[The path to the driver executable must be set by the webdriver.gecko.driver system property; for more information, see https://github.com/mozilla/geckodriver. The latest version can be downloaded from https://github.com/mozilla/geckodriver/releases]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalStateException: The path to the driver executable must be set by the webdriver.gecko.driver system property; for more information, see https://github.com/mozilla/geckodriver. The latest version can be downloaded from https://github.com/mozilla/geckodriver/releases
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:847)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:134)
+	at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:44)
+	at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:167)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
+	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:190)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:147)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:125)
+	at FeaturesInTestNG.ExpectedException.setup(ExpectedException.java:16)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalStateException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforetest -->
-        <test-method status="PASS" signature="beforemethode()[pri:0, instance:AnnotationsInTestNG.Annotations@3ecf72fd]" name="beforemethode" is-config="true" duration-ms="0" started-at="2019-03-18T15:09:16Z" finished-at="2019-03-18T15:09:16Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforemethode -->
-        <test-method status="PASS" signature="beforeclass()[pri:0, instance:AnnotationsInTestNG.Annotations@3ecf72fd]" name="beforeclass" is-config="true" duration-ms="0" started-at="2019-03-18T15:09:16Z" finished-at="2019-03-18T15:09:16Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeclass -->
-        <test-method status="PASS" signature="test()[pri:0, instance:AnnotationsInTestNG.Annotations@3ecf72fd]" name="test" duration-ms="16" started-at="2019-03-18T15:09:16Z" finished-at="2019-03-18T15:09:16Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test -->
-        <test-method status="PASS" signature="afterclass()[pri:0, instance:AnnotationsInTestNG.Annotations@3ecf72fd]" name="afterclass" is-config="true" duration-ms="0" started-at="2019-03-18T15:09:16Z" finished-at="2019-03-18T15:09:16Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterclass -->
-        <test-method status="PASS" signature="aftermethod()[pri:0, instance:AnnotationsInTestNG.Annotations@3ecf72fd]" name="aftermethod" is-config="true" duration-ms="0" started-at="2019-03-18T15:09:16Z" finished-at="2019-03-18T15:09:16Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- aftermethod -->
-        <test-method status="PASS" signature="aftertest()[pri:0, instance:AnnotationsInTestNG.Annotations@3ecf72fd]" name="aftertest" is-config="true" duration-ms="0" started-at="2019-03-18T15:09:16Z" finished-at="2019-03-18T15:09:16Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- aftertest -->
-        <test-method status="PASS" signature="aftersuite()[pri:0, instance:AnnotationsInTestNG.Annotations@3ecf72fd]" name="aftersuite" is-config="true" duration-ms="1" started-at="2019-03-18T15:09:17Z" finished-at="2019-03-18T15:09:17Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- aftersuite -->
-      </class> <!-- AnnotationsInTestNG.Annotations -->
+        </test-method> <!-- setup -->
+      </class> <!-- FeaturesInTestNG.ExpectedException -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

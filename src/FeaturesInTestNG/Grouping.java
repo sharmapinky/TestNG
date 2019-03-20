@@ -11,7 +11,7 @@ public class Grouping {
 	public void subtraction(){
 		System.out.println(20-10);
 	}
-	@Test(groups="maths")
+	@Test(groups="maths",priority=1)
 	public void multiplication(){
 		System.out.println(10*20);
 	}
