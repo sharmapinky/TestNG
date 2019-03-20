@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="example suite 1" verbose="1" >
+  <test name="Regression suite 1" >
+    <classes>
+      <class name="AnnotationsInTestNG.Annotations"/>
+      <class name="FeaturesInTestNG.DependsOnMethod"/>
+      <class name="FeaturesInTestNG.ExpectedException"/>
+      <class name="FeaturesInTestNG.Priority"/>
+      <class name="FeaturesInTestNG.InvocationCount"/>
+      <class name="FeaturesInTestNG.Grouping"/>
+      <class name="FeaturesInTestNG.ExceptionTimeOut"/>
+     
+      
+    </classes>
+ </test>
+</suite>

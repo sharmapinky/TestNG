@@ -1,13 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="2" passed="2">
+<testng-results skipped="0" failed="1" total="43" passed="42">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="1178" started-at="2019-03-20T04:02:08Z" finished-at="2019-03-20T04:02:09Z">
+  <suite name="example suite 1" duration-ms="822" started-at="2019-03-20T06:58:41Z" finished-at="2019-03-20T06:58:42Z">
     <groups>
+      <group name="maths">
+        <method signature="Grouping.division()[pri:0, instance:FeaturesInTestNG.Grouping@721e0f4f]" name="division" class="FeaturesInTestNG.Grouping"/>
+        <method signature="Grouping.multiplication()[pri:1, instance:FeaturesInTestNG.Grouping@721e0f4f]" name="multiplication" class="FeaturesInTestNG.Grouping"/>
+        <method signature="Grouping.subtraction()[pri:0, instance:FeaturesInTestNG.Grouping@721e0f4f]" name="subtraction" class="FeaturesInTestNG.Grouping"/>
+        <method signature="Grouping.sum()[pri:0, instance:FeaturesInTestNG.Grouping@721e0f4f]" name="sum" class="FeaturesInTestNG.Grouping"/>
+      </group> <!-- maths -->
+      <group name="String">
+        <method signature="Grouping.stringConcat()[pri:0, instance:FeaturesInTestNG.Grouping@721e0f4f]" name="stringConcat" class="FeaturesInTestNG.Grouping"/>
+      </group> <!-- String -->
     </groups>
-    <test name="Default test" duration-ms="1178" started-at="2019-03-20T04:02:08Z" finished-at="2019-03-20T04:02:09Z">
+    <test name="Regression suite 1" duration-ms="822" started-at="2019-03-20T06:58:41Z" finished-at="2019-03-20T06:58:42Z">
+      <class name="AnnotationsInTestNG.Annotations">
+        <test-method status="PASS" signature="beforesuite()[pri:0, instance:AnnotationsInTestNG.Annotations@3ab39c39]" name="beforesuite" is-config="true" duration-ms="20" started-at="2019-03-20T12:28:41Z" finished-at="2019-03-20T12:28:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforesuite -->
+        <test-method status="PASS" signature="beforetest()[pri:0, instance:AnnotationsInTestNG.Annotations@3ab39c39]" name="beforetest" is-config="true" duration-ms="0" started-at="2019-03-20T12:28:41Z" finished-at="2019-03-20T12:28:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforetest -->
+        <test-method status="PASS" signature="beforeclass()[pri:0, instance:AnnotationsInTestNG.Annotations@3ab39c39]" name="beforeclass" is-config="true" duration-ms="0" started-at="2019-03-20T12:28:41Z" finished-at="2019-03-20T12:28:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeclass -->
+        <test-method status="PASS" signature="test()[pri:0, instance:AnnotationsInTestNG.Annotations@3ab39c39]" name="test" duration-ms="12" started-at="2019-03-20T12:28:41Z" finished-at="2019-03-20T12:28:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method status="PASS" signature="beforemethode()[pri:0, instance:AnnotationsInTestNG.Annotations@3ab39c39]" name="beforemethode" is-config="true" duration-ms="0" started-at="2019-03-20T12:28:41Z" finished-at="2019-03-20T12:28:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforemethode -->
+        <test-method status="PASS" signature="aftermethod()[pri:0, instance:AnnotationsInTestNG.Annotations@3ab39c39]" name="aftermethod" is-config="true" duration-ms="4" started-at="2019-03-20T12:28:41Z" finished-at="2019-03-20T12:28:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftermethod -->
+        <test-method status="PASS" signature="afterclass()[pri:0, instance:AnnotationsInTestNG.Annotations@3ab39c39]" name="afterclass" is-config="true" duration-ms="0" started-at="2019-03-20T12:28:41Z" finished-at="2019-03-20T12:28:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterclass -->
+        <test-method status="PASS" signature="aftertest()[pri:0, instance:AnnotationsInTestNG.Annotations@3ab39c39]" name="aftertest" is-config="true" duration-ms="16" started-at="2019-03-20T12:28:42Z" finished-at="2019-03-20T12:28:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftertest -->
+        <test-method status="PASS" signature="aftersuite()[pri:0, instance:AnnotationsInTestNG.Annotations@3ab39c39]" name="aftersuite" is-config="true" duration-ms="4" started-at="2019-03-20T12:28:42Z" finished-at="2019-03-20T12:28:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftersuite -->
+      </class> <!-- AnnotationsInTestNG.Annotations -->
       <class name="FeaturesInTestNG.ExpectedException">
-        <test-method status="PASS" signature="handleException()[pri:0, instance:FeaturesInTestNG.ExpectedException@25618e91]" name="handleException" duration-ms="91" started-at="2019-03-20T09:32:08Z" finished-at="2019-03-20T09:32:08Z">
+        <test-method status="PASS" signature="handleException()[pri:0, instance:FeaturesInTestNG.ExpectedException@2eee9593]" name="handleException" duration-ms="8" started-at="2019-03-20T12:28:41Z" finished-at="2019-03-20T12:28:41Z">
           <exception class="java.lang.NumberFormatException">
             <message>
               <![CDATA[For input string: "100a"]]>
@@ -48,7 +95,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- handleException -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:FeaturesInTestNG.ExpectedException@25618e91]" name="setup" duration-ms="797" started-at="2019-03-20T09:32:08Z" finished-at="2019-03-20T09:32:09Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:FeaturesInTestNG.ExpectedException@2eee9593]" name="setup" duration-ms="380" started-at="2019-03-20T12:28:41Z" finished-at="2019-03-20T12:28:41Z">
           <exception class="java.lang.IllegalStateException">
             <message>
               <![CDATA[The path to the driver executable must be set by the webdriver.gecko.driver system property; for more information, see https://github.com/mozilla/geckodriver. The latest version can be downloaded from https://github.com/mozilla/geckodriver/releases]]>
@@ -95,6 +142,207 @@
           </reporter-output>
         </test-method> <!-- setup -->
       </class> <!-- FeaturesInTestNG.ExpectedException -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="FeaturesInTestNG.Priority">
+        <test-method status="PASS" signature="sum()[pri:1, instance:FeaturesInTestNG.Priority@7907ec20]" name="sum" duration-ms="0" started-at="2019-03-20T12:28:41Z" finished-at="2019-03-20T12:28:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sum -->
+        <test-method status="PASS" signature="subtraction()[pri:2, instance:FeaturesInTestNG.Priority@7907ec20]" name="subtraction" duration-ms="0" started-at="2019-03-20T12:28:41Z" finished-at="2019-03-20T12:28:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- subtraction -->
+        <test-method status="PASS" signature="multiplication()[pri:3, instance:FeaturesInTestNG.Priority@7907ec20]" name="multiplication" duration-ms="0" started-at="2019-03-20T12:28:41Z" finished-at="2019-03-20T12:28:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- multiplication -->
+        <test-method status="PASS" signature="division()[pri:4, instance:FeaturesInTestNG.Priority@7907ec20]" name="division" duration-ms="4" started-at="2019-03-20T12:28:41Z" finished-at="2019-03-20T12:28:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- division -->
+      </class> <!-- FeaturesInTestNG.Priority -->
+      <class name="FeaturesInTestNG.InvocationCount">
+        <test-method status="PASS" signature="subtraction()[pri:0, instance:FeaturesInTestNG.InvocationCount@546a03af]" name="subtraction" duration-ms="4" started-at="2019-03-20T12:28:41Z" finished-at="2019-03-20T12:28:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- subtraction -->
+        <test-method status="PASS" signature="subtraction()[pri:0, instance:FeaturesInTestNG.InvocationCount@546a03af]" name="subtraction" duration-ms="4" started-at="2019-03-20T12:28:41Z" finished-at="2019-03-20T12:28:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- subtraction -->
+        <test-method status="PASS" signature="subtraction()[pri:0, instance:FeaturesInTestNG.InvocationCount@546a03af]" name="subtraction" duration-ms="4" started-at="2019-03-20T12:28:41Z" finished-at="2019-03-20T12:28:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- subtraction -->
+        <test-method status="PASS" signature="subtraction()[pri:0, instance:FeaturesInTestNG.InvocationCount@546a03af]" name="subtraction" duration-ms="0" started-at="2019-03-20T12:28:41Z" finished-at="2019-03-20T12:28:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- subtraction -->
+        <test-method status="PASS" signature="subtraction()[pri:0, instance:FeaturesInTestNG.InvocationCount@546a03af]" name="subtraction" duration-ms="4" started-at="2019-03-20T12:28:41Z" finished-at="2019-03-20T12:28:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- subtraction -->
+        <test-method status="PASS" signature="subtraction()[pri:0, instance:FeaturesInTestNG.InvocationCount@546a03af]" name="subtraction" duration-ms="4" started-at="2019-03-20T12:28:41Z" finished-at="2019-03-20T12:28:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- subtraction -->
+        <test-method status="PASS" signature="subtraction()[pri:0, instance:FeaturesInTestNG.InvocationCount@546a03af]" name="subtraction" duration-ms="4" started-at="2019-03-20T12:28:41Z" finished-at="2019-03-20T12:28:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- subtraction -->
+        <test-method status="PASS" signature="subtraction()[pri:0, instance:FeaturesInTestNG.InvocationCount@546a03af]" name="subtraction" duration-ms="0" started-at="2019-03-20T12:28:42Z" finished-at="2019-03-20T12:28:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- subtraction -->
+        <test-method status="PASS" signature="subtraction()[pri:0, instance:FeaturesInTestNG.InvocationCount@546a03af]" name="subtraction" duration-ms="8" started-at="2019-03-20T12:28:42Z" finished-at="2019-03-20T12:28:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- subtraction -->
+        <test-method status="PASS" signature="subtraction()[pri:0, instance:FeaturesInTestNG.InvocationCount@546a03af]" name="subtraction" duration-ms="4" started-at="2019-03-20T12:28:42Z" finished-at="2019-03-20T12:28:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- subtraction -->
+        <test-method status="PASS" signature="subtraction()[pri:0, instance:FeaturesInTestNG.InvocationCount@546a03af]" name="subtraction" duration-ms="4" started-at="2019-03-20T12:28:42Z" finished-at="2019-03-20T12:28:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- subtraction -->
+        <test-method status="PASS" signature="subtraction()[pri:0, instance:FeaturesInTestNG.InvocationCount@546a03af]" name="subtraction" duration-ms="4" started-at="2019-03-20T12:28:42Z" finished-at="2019-03-20T12:28:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- subtraction -->
+        <test-method status="PASS" signature="subtraction()[pri:0, instance:FeaturesInTestNG.InvocationCount@546a03af]" name="subtraction" duration-ms="0" started-at="2019-03-20T12:28:42Z" finished-at="2019-03-20T12:28:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- subtraction -->
+        <test-method status="PASS" signature="subtraction()[pri:0, instance:FeaturesInTestNG.InvocationCount@546a03af]" name="subtraction" duration-ms="0" started-at="2019-03-20T12:28:42Z" finished-at="2019-03-20T12:28:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- subtraction -->
+        <test-method status="PASS" signature="subtraction()[pri:0, instance:FeaturesInTestNG.InvocationCount@546a03af]" name="subtraction" duration-ms="0" started-at="2019-03-20T12:28:42Z" finished-at="2019-03-20T12:28:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- subtraction -->
+        <test-method status="PASS" signature="subtraction()[pri:0, instance:FeaturesInTestNG.InvocationCount@546a03af]" name="subtraction" duration-ms="0" started-at="2019-03-20T12:28:42Z" finished-at="2019-03-20T12:28:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- subtraction -->
+        <test-method status="PASS" signature="subtraction()[pri:0, instance:FeaturesInTestNG.InvocationCount@546a03af]" name="subtraction" duration-ms="0" started-at="2019-03-20T12:28:42Z" finished-at="2019-03-20T12:28:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- subtraction -->
+        <test-method status="PASS" signature="subtraction()[pri:0, instance:FeaturesInTestNG.InvocationCount@546a03af]" name="subtraction" duration-ms="0" started-at="2019-03-20T12:28:42Z" finished-at="2019-03-20T12:28:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- subtraction -->
+        <test-method status="PASS" signature="subtraction()[pri:0, instance:FeaturesInTestNG.InvocationCount@546a03af]" name="subtraction" duration-ms="4" started-at="2019-03-20T12:28:42Z" finished-at="2019-03-20T12:28:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- subtraction -->
+        <test-method status="PASS" signature="subtraction()[pri:0, instance:FeaturesInTestNG.InvocationCount@546a03af]" name="subtraction" duration-ms="4" started-at="2019-03-20T12:28:42Z" finished-at="2019-03-20T12:28:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- subtraction -->
+        <test-method status="PASS" signature="sum()[pri:0, instance:FeaturesInTestNG.InvocationCount@546a03af]" name="sum" duration-ms="4" started-at="2019-03-20T12:28:42Z" finished-at="2019-03-20T12:28:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sum -->
+        <test-method status="PASS" signature="sum()[pri:0, instance:FeaturesInTestNG.InvocationCount@546a03af]" name="sum" duration-ms="4" started-at="2019-03-20T12:28:42Z" finished-at="2019-03-20T12:28:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sum -->
+        <test-method status="PASS" signature="sum()[pri:0, instance:FeaturesInTestNG.InvocationCount@546a03af]" name="sum" duration-ms="0" started-at="2019-03-20T12:28:42Z" finished-at="2019-03-20T12:28:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sum -->
+        <test-method status="PASS" signature="sum()[pri:0, instance:FeaturesInTestNG.InvocationCount@546a03af]" name="sum" duration-ms="8" started-at="2019-03-20T12:28:42Z" finished-at="2019-03-20T12:28:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sum -->
+        <test-method status="PASS" signature="sum()[pri:0, instance:FeaturesInTestNG.InvocationCount@546a03af]" name="sum" duration-ms="0" started-at="2019-03-20T12:28:42Z" finished-at="2019-03-20T12:28:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sum -->
+        <test-method status="PASS" signature="sum()[pri:0, instance:FeaturesInTestNG.InvocationCount@546a03af]" name="sum" duration-ms="0" started-at="2019-03-20T12:28:42Z" finished-at="2019-03-20T12:28:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sum -->
+        <test-method status="PASS" signature="sum()[pri:0, instance:FeaturesInTestNG.InvocationCount@546a03af]" name="sum" duration-ms="4" started-at="2019-03-20T12:28:42Z" finished-at="2019-03-20T12:28:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sum -->
+        <test-method status="PASS" signature="sum()[pri:0, instance:FeaturesInTestNG.InvocationCount@546a03af]" name="sum" duration-ms="0" started-at="2019-03-20T12:28:42Z" finished-at="2019-03-20T12:28:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sum -->
+        <test-method status="PASS" signature="sum()[pri:0, instance:FeaturesInTestNG.InvocationCount@546a03af]" name="sum" duration-ms="0" started-at="2019-03-20T12:28:42Z" finished-at="2019-03-20T12:28:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sum -->
+        <test-method status="PASS" signature="sum()[pri:0, instance:FeaturesInTestNG.InvocationCount@546a03af]" name="sum" duration-ms="4" started-at="2019-03-20T12:28:42Z" finished-at="2019-03-20T12:28:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sum -->
+      </class> <!-- FeaturesInTestNG.InvocationCount -->
+      <class name="FeaturesInTestNG.ExceptionTimeOut">
+        <test-method status="FAIL" signature="infiniteLoop()[pri:0, instance:FeaturesInTestNG.ExceptionTimeOut@28864e92]" name="infiniteLoop" duration-ms="80" started-at="2019-03-20T12:28:42Z" finished-at="2019-03-20T12:28:42Z">
+          <exception class="org.testng.internal.thread.ThreadTimeoutException">
+            <message>
+              <![CDATA[Method org.testng.internal.TestNGMethod.infiniteLoop() didn't finish within the time-out 2]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.internal.thread.ThreadTimeoutException: Method org.testng.internal.TestNGMethod.infiniteLoop() didn't finish within the time-out 2
+	at java.io.FileOutputStream.writeBytes(Native Method)
+	at java.io.FileOutputStream.write(Unknown Source)
+	at java.io.BufferedOutputStream.flushBuffer(Unknown Source)
+	at java.io.BufferedOutputStream.flush(Unknown Source)
+	at java.io.PrintStream.write(Unknown Source)
+	at sun.nio.cs.StreamEncoder.writeBytes(Unknown Source)
+	at sun.nio.cs.StreamEncoder.implFlushBuffer(Unknown Source)
+	at sun.nio.cs.StreamEncoder.flushBuffer(Unknown Source)
+	at java.io.OutputStreamWriter.flushBuffer(Unknown Source)
+	at java.io.PrintStream.newLine(Unknown Source)
+	at java.io.PrintStream.println(Unknown Source)
+	at FeaturesInTestNG.ExceptionTimeOut.infiniteLoop(ExceptionTimeOut.java:11)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:54)
+	at org.testng.internal.InvokeMethodRunnable.run(InvokeMethodRunnable.java:40)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.internal.thread.ThreadTimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- infiniteLoop -->
+      </class> <!-- FeaturesInTestNG.ExceptionTimeOut -->
+      <class name="FeaturesInTestNG.Grouping">
+        <test-method status="PASS" signature="division()[pri:0, instance:FeaturesInTestNG.Grouping@721e0f4f]" name="division" duration-ms="0" started-at="2019-03-20T12:28:42Z" finished-at="2019-03-20T12:28:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- division -->
+        <test-method status="PASS" signature="stringConcat()[pri:0, instance:FeaturesInTestNG.Grouping@721e0f4f]" name="stringConcat" duration-ms="0" started-at="2019-03-20T12:28:42Z" finished-at="2019-03-20T12:28:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stringConcat -->
+        <test-method status="PASS" signature="subtraction()[pri:0, instance:FeaturesInTestNG.Grouping@721e0f4f]" name="subtraction" duration-ms="0" started-at="2019-03-20T12:28:42Z" finished-at="2019-03-20T12:28:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- subtraction -->
+        <test-method status="PASS" signature="sum()[pri:0, instance:FeaturesInTestNG.Grouping@721e0f4f]" name="sum" duration-ms="0" started-at="2019-03-20T12:28:42Z" finished-at="2019-03-20T12:28:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sum -->
+        <test-method status="PASS" signature="multiplication()[pri:1, instance:FeaturesInTestNG.Grouping@721e0f4f]" name="multiplication" duration-ms="0" started-at="2019-03-20T12:28:42Z" finished-at="2019-03-20T12:28:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- multiplication -->
+      </class> <!-- FeaturesInTestNG.Grouping -->
+    </test> <!-- Regression suite 1 -->
+  </suite> <!-- example suite 1 -->
 </testng-results>
